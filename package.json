@@ -1,0 +1,40 @@
+{
+  "name": "my-quiver-component",
+  "author": {
+    "name": "Your Name",
+    "email": "email@example.org"
+  },
+  "desription": "Project Description",
+  "version": "1.0.0",
+  "homepage": "https://github.com/quiverjs/quiver-boilerplate",
+  "repository": {
+    "url": "git@github.com:quiverjs/quiver-boilerplate.git"
+  },
+  "dependencies": {
+    "quiver-core": "~1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.0.1",
+    "chai-as-promised": "^4.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/quiverjs/quiver-boilerplate/issues"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/quiverjs/license/master/LICENSE"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha es5/test",
+    "start": "npm run build && node es5/server/server.js",
+    "pretest": "npm run build",
+    "prepublish": "npm run build",
+    "build": "npm run build-lib && npm run build-test && npm run build-server",
+    "build-lib": "traceur --dir lib es5/lib --modules commonjs",
+    "build-test": "traceur --dir test es5/test --modules commonjs",
+    "build-server": "traceur --dir server es5/server --modules commonjs"
+  },
+  "private": true
+}
