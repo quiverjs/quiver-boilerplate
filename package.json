@@ -5,13 +5,13 @@
     "email": "email@example.org"
   },
   "desription": "Project Description",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/quiverjs/quiver-boilerplate",
   "repository": {
     "url": "git@github.com:quiverjs/quiver-boilerplate.git"
   },
   "dependencies": {
-    "quiver-core": "~1.0.1"
+    "quiver-core": "~1.2.0"
   },
   "devDependencies": {
     "chai": "^1.10.0",
@@ -27,14 +27,12 @@
   },
   "main": "./index.js",
   "scripts": {
-    "test": "mocha es5/test",
-    "start": "npm run build && node es5/server/server.js",
-    "pretest": "npm run build",
-    "prepublish": "npm run build",
-    "build": "npm run build-lib && npm run build-test && npm run build-server",
-    "build-lib": "traceur --dir lib es5/lib --modules commonjs",
-    "build-test": "traceur --dir test es5/test --modules commonjs",
-    "build-server": "traceur --dir server es5/server --modules commonjs"
+    "test": "make test",
+    "prepublish": "make build",
+    "start": "make server"
+  },
+  "engines": {
+    "iojs": "^1.4.2"
   },
   "private": true
 }
