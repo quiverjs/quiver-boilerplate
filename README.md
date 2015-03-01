@@ -1,5 +1,4 @@
-quiver-boilerplate
-==================
+# quiver-boilerplate
 
 This repository contains the boilerplate code for you to start your first [Quiver.js](http://quiverjs.org) project. For more information refer to the [build system documentation](https://github.com/quiverjs/quiverjs/wiki/Build-System).
 
@@ -36,23 +35,21 @@ Hello World
 
 ## Code Organization
 
-  - [`lib/`](lib) contains your library and component code.
-  - [`test/`](test) contains your unit test files.
-  - [`server/`](server) contains your server code and config.
-  - [`es5/`](es5) contains all transpiled ES5 code.
+  - [`src/`](src) contains your orginal source code.
+  - [`src/lib/`](lib) contains your library and component code.
+  - [`src/test/`](test) contains your unit test files.
+  - [`src/server/`](server) contains your server code and config.
+  - [`out/`](out) contains the ES6-transpiled code from your `src` folder.
   - [`package.json`](package.json) contains default dependencies and build scripts to transpile ES6 code.
-  - [`index.js`](index.js) is the entry point specified in `package.json` and simply re-exports the ES5-transpiled [`lib/component.js`](lib/component.js).
-
+  - [`index.js`](index.js) is the entry point specified in `package.json` and simply re-exports the transpiled [`lib/component.js`](lib/component.js).
 
 ## Main Component
 
 This boilerplate is designed for projects running as standalone web application. By convention the main handler component that will be run as server is simply exported as `main`. [`server.js`](server/server.js) simply load the main component from [`component.js`](lib/component.js) and run it as HTTP server.
 
-
 ## Library Component
 
 For library projects that export quiver components for others to use, the [`server/`](server) folder should be removed. The exported library components should also be given meaningful names other than `main`.
-
 
 ## package.json
 
