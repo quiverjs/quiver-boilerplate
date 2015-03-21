@@ -5,18 +5,19 @@
     "email": "email@example.org"
   },
   "desription": "Project Description",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/quiverjs/quiver-boilerplate",
   "repository": {
     "url": "git@github.com:quiverjs/quiver-boilerplate.git"
   },
   "dependencies": {
-    "quiver-core": "~1.2.0"
+    "quiver-core": "~1.3.0"
   },
   "devDependencies": {
-    "chai": "^1.10.0",
-    "mocha": "^2.0.1",
-    "chai-as-promised": "^4.1.1"
+    "babel": "~4.7.16",
+    "chai": "^2.1.2",
+    "mocha": "^2.2.1",
+    "chai-as-promised": "^4.3.0"
   },
   "bugs": {
     "url": "https://github.com/quiverjs/quiver-boilerplate/issues"
@@ -32,7 +33,7 @@
     "start": "make server"
   },
   "engines": {
-    "iojs": "^1.4.2"
+    "iojs": "^1.6.1"
   },
   "private": true
 }

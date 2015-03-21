@@ -1,5 +1,3 @@
-import 'quiver-core/traceur'
-
 import { main } from '../lib/component'
 import { async } from 'quiver-core/promise'
 
