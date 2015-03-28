@@ -11,12 +11,12 @@
     "url": "git@github.com:quiverjs/quiver-boilerplate.git"
   },
   "dependencies": {
-    "quiver-core": "~1.3.0"
+    "quiver": "~1.3.1"
   },
   "devDependencies": {
-    "babel": "~4.7.16",
     "chai": "^2.1.2",
     "mocha": "^2.2.1",
+    "babel": "~4.7.16",
     "chai-as-promised": "^4.3.0"
   },
   "bugs": {
@@ -33,7 +33,7 @@
     "start": "make server"
   },
   "engines": {
-    "iojs": "^1.6.1"
+    "iojs": "^1.6.2"
   },
   "private": true
 }

@@ -1,4 +1,4 @@
-import { startServer } from 'quiver-core/http'
+import { startServer } from 'quiver/http'
 
 import { config } from './config'
 import { main } from '../lib/component'

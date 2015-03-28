@@ -1,5 +1,5 @@
 import { main } from '../lib/component'
-import { async } from 'quiver-core/promise'
+import { async } from 'quiver/promise'
 
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
